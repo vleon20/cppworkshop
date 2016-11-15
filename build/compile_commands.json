@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/ubuntu/workspace/cppworkshop/build/src",
+  "command": "/usr/bin/g++-5     -std=c++14 -O2 -Wall -Werror -g -g -g -fsanitize=address -fuse-ld=gold -fno-omit-frame-pointer -fno-optimize-sibling-calls -fstack-protector-strong -D_FORTIFY_SOURCE=2 -I/home/ubuntu/workspace/cppworkshop/include    -o CMakeFiles/auto.dir/auto.cpp.o -c /home/ubuntu/workspace/cppworkshop/src/auto.cpp",
+  "file": "/home/ubuntu/workspace/cppworkshop/src/auto.cpp"
+},
+{
+  "directory": "/home/ubuntu/workspace/cppworkshop/build/src",
+  "command": "/usr/bin/g++-5     -std=c++14 -O2 -Wall -Werror -g -g -g -fsanitize=address -fuse-ld=gold -fno-omit-frame-pointer -fno-optimize-sibling-calls -fstack-protector-strong -D_FORTIFY_SOURCE=2 -I/home/ubuntu/workspace/cppworkshop/include    -o CMakeFiles/memerr.dir/memerr.cpp.o -c /home/ubuntu/workspace/cppworkshop/src/memerr.cpp",
+  "file": "/home/ubuntu/workspace/cppworkshop/src/memerr.cpp"
+},
+{
+  "directory": "/home/ubuntu/workspace/cppworkshop/build/src",
+  "command": "/usr/bin/g++-5     -std=c++14 -O2 -Wall -Werror -g -g -g -fsanitize=address -fuse-ld=gold -fno-omit-frame-pointer -fno-optimize-sibling-calls -fstack-protector-strong -D_FORTIFY_SOURCE=2 -I/home/ubuntu/workspace/cppworkshop/include    -o CMakeFiles/move.dir/move.cpp.o -c /home/ubuntu/workspace/cppworkshop/src/move.cpp",
+  "file": "/home/ubuntu/workspace/cppworkshop/src/move.cpp"
+},
+{
+  "directory": "/home/ubuntu/workspace/cppworkshop/build/src",
+  "command": "/usr/bin/g++-5     -std=c++14 -O2 -Wall -Werror -g -g -g -fsanitize=address -fuse-ld=gold -fno-omit-frame-pointer -fno-optimize-sibling-calls -fstack-protector-strong -D_FORTIFY_SOURCE=2 -I/home/ubuntu/workspace/cppworkshop/include    -o CMakeFiles/raii.dir/raii.cpp.o -c /home/ubuntu/workspace/cppworkshop/src/raii.cpp",
+  "file": "/home/ubuntu/workspace/cppworkshop/src/raii.cpp"
+},
+{
+  "directory": "/home/ubuntu/workspace/cppworkshop/build/src",
+  "command": "/usr/bin/g++-5     -std=c++14 -O2 -Wall -Werror -g -g -g -fsanitize=address -fuse-ld=gold -fno-omit-frame-pointer -fno-optimize-sibling-calls -fstack-protector-strong -D_FORTIFY_SOURCE=2 -I/home/ubuntu/workspace/cppworkshop/include    -o CMakeFiles/stl.dir/stl.cpp.o -c /home/ubuntu/workspace/cppworkshop/src/stl.cpp",
+  "file": "/home/ubuntu/workspace/cppworkshop/src/stl.cpp"
+},
+{
+  "directory": "/home/ubuntu/workspace/cppworkshop/build/src",
+  "command": "/usr/bin/g++-5     -std=c++14 -O2 -Wall -Werror -g -g -g -fsanitize=address -fuse-ld=gold -fno-omit-frame-pointer -fno-optimize-sibling-calls -fstack-protector-strong -D_FORTIFY_SOURCE=2 -I/home/ubuntu/workspace/cppworkshop/include    -o CMakeFiles/thread.dir/thread.cpp.o -c /home/ubuntu/workspace/cppworkshop/src/thread.cpp",
+  "file": "/home/ubuntu/workspace/cppworkshop/src/thread.cpp"
+}
+]
