@@ -4,7 +4,7 @@
 
 // uncomment for individual errors
 //#define DO_ERROR_ADDRESS_SANITIZER
-//#define DO_ERROR_STACK_PROTECTOR
+#define DO_ERROR_STACK_PROTECTOR
 //#define DO_ERROR_FORTIFY_SOURCE
 
 #define STR "deadbeefdeadbeefdeadbeefdeadbeef"
@@ -20,22 +20,22 @@ void err_asan()
 {
 #ifdef DO_ERROR_ADDRESS_SANITIZER
   // buffer overflow
-  std::unique_ptr<int[]> buf{new int[2]};
-  buf[10] = 42;
+  //std::unique_ptr<int[]> buf{new int[2]};
+  //buf[10] = 42;
 
   // use after free
-  int *k = fetch_mem();
-  k[5] = 10;
+  //int *k = fetch_mem();
+ // k[5] = 10;
 
   // // double free
-  int *l = new int[3];
-  l[2] = 2;
-  delete[] l;
-  delete[] l;
+ // int *l = new int[3];
+//  l[2] = 2;
+//  delete[] l;
+ // delete[] l;
 
   // memory loss
-  int *m = new int[1024];
-  m[3] = 1;
+//  int *m = new int[1024];
+ // m[3] = 1;
 #endif // DO_ERROR_ADDRESS_SANITIZER
 }
 
