@@ -67,6 +67,7 @@ std::unordered_set<int> port_scan(const std::set<int>& server_ports)
     net::Message req;
     if (net::send(&req) == false) {
       net::close(sport);
+      net::close(cport);
       continue;
     }
     net::Message* resp{nullptr};
@@ -82,6 +83,7 @@ std::unordered_set<int> port_scan(const std::set<int>& server_ports)
       if (net::send(&req) == false || net::recv(resp) == false) {
         net::close(sport);
         net::close(cport);
+        delete resp;
         continue;
       }
       active_ports.insert(sport);

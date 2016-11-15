@@ -68,6 +68,8 @@ class File
   }
   File(const File& f)
       : size_{f.size_}, buf_{f.buf_} {}
+  File(File&& f)
+      : size_{f.size_}, buf_{std::move(f.buf_)} { f.size_ = 0; }
   T& operator[](std::size_t pos) { return buf_[pos]; }
   const T& operator[](std::size_t pos) const { return buf_[pos]; }
   std::size_t size() const { return size_; }
